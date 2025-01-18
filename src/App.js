@@ -20,7 +20,9 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/photoblog">
+      {" "}
+      {/* Added basename */}
       <ScrollToTop /> {/* Ensures scroll to top on route change */}
       <Routes>
         <Route path="/" element={<Layout />}>
