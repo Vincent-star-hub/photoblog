@@ -6,6 +6,7 @@ import beach from "../images/beach.jpg";
 import self from "../images/self.jpg";
 import bokeh from "../images/bokeh.jpg";
 import mobiletips from "../images/mobiletips.jpg";
+import logo from "../images/logo.png";
 
 const HomePage = () => {
   const services = [
@@ -82,6 +83,12 @@ const HomePage = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+          {/* Logo */}
+          <img
+            src={logo}
+            alt="Smartphone Photography Logo"
+            className="w-full h-full md:w-32 md:h-32"
+          />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
             Smartphone Photography
           </h1>

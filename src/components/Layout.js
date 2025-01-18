@@ -14,7 +14,9 @@ const Layout = () => {
     { path: "/booking", label: "Booking" },
   ];
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <div className="min-h-screen">
@@ -39,11 +41,11 @@ const Layout = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative transition-colors duration-200 pb-1 ${
+                className={`transition-colors ${
                   isActive(item.path)
-                    ? "text-orange-400 after:bg-orange-400"
-                    : "text-white after:bg-transparent hover:text-orange-400 hover:after:bg-orange-400"
-                } after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px]`}
+                    ? "text-orange-400"
+                    : "text-white hover:text-orange-400 hover:underline"
+                }`}
               >
                 {item.label}
               </Link>
@@ -62,7 +64,7 @@ const Layout = () => {
                   className={`transition-colors ${
                     isActive(item.path)
                       ? "text-orange-400"
-                      : "text-white hover:text-orange-400"
+                      : "text-white hover:text-orange-400 hover:underline"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
