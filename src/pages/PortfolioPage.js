@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import bgc from "../images/bgc.jpg";
 import bgc2 from "../images/bgc2.jpg";
 import venice from "../images/venice.jpg";
@@ -266,6 +266,7 @@ const PortfolioGallery = () => {
   ];
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [viewedImage, setViewedImage] = useState(null); // State for the modal
+  const [showScrollButton, setShowScrollButton] = useState(false); // State for button visibility
 
   // Group items by category
   const groupedItems = portfolioItems.reduce((acc, item) => {
@@ -275,6 +276,27 @@ const PortfolioGallery = () => {
     acc[item.category].push(item);
     return acc;
   }, {});
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Track scroll position to show/hide button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 800) {
+        // Change this value to control when to show the button
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -401,6 +423,16 @@ const PortfolioGallery = () => {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Scroll to top button */}
+      {showScrollButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 bg-orange-400 rounded-full text-white shadow-lg hover:bg-orange-500 transition-all"
+        >
+          ↑
+        </button>
       )}
     </div>
   );
