@@ -87,7 +87,7 @@ const HomePage = () => {
           <img
             src={logo}
             alt="Smartphone Photography Logo"
-            className="w-full h-full md:w-32 md:h-32"
+            className="w-24 h-24 md:w-32 md:h-32"
           />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
             Smartphone Photography
