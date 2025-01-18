@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photoblog/static/css/main.a37f3482.css",
-    "main.js": "/photoblog/static/js/main.d0cabaa6.js",
+    "main.css": "/photoblog/static/css/main.a47c56eb.css",
+    "main.js": "/photoblog/static/js/main.f6897b06.js",
     "static/js/373.27dca38c.chunk.js": "/photoblog/static/js/373.27dca38c.chunk.js",
     "static/media/cat2.jpg": "/photoblog/static/media/cat2.96f71a99b17f8a067975.jpg",
     "static/media/dog.jpg": "/photoblog/static/media/dog.4ff8245a4d5872c3db21.jpg",
@@ -43,12 +43,12 @@
     "static/media/self.jpg": "/photoblog/static/media/self.80e25e881af1970455b6.jpg",
     "static/media/logo.png": "/photoblog/static/media/logo.26596fccb85102fa3a06.png",
     "index.html": "/photoblog/index.html",
-    "main.a37f3482.css.map": "/photoblog/static/css/main.a37f3482.css.map",
-    "main.d0cabaa6.js.map": "/photoblog/static/js/main.d0cabaa6.js.map",
+    "main.a47c56eb.css.map": "/photoblog/static/css/main.a47c56eb.css.map",
+    "main.f6897b06.js.map": "/photoblog/static/js/main.f6897b06.js.map",
     "373.27dca38c.chunk.js.map": "/photoblog/static/js/373.27dca38c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a37f3482.css",
-    "static/js/main.d0cabaa6.js"
+    "static/css/main.a47c56eb.css",
+    "static/js/main.f6897b06.js"
   ]
 }
