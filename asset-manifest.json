@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photoblog/static/css/main.4d0d2723.css",
-    "main.js": "/photoblog/static/js/main.f394f6d6.js",
+    "main.css": "/photoblog/static/css/main.a67a035e.css",
+    "main.js": "/photoblog/static/js/main.f49af378.js",
     "static/js/373.27dca38c.chunk.js": "/photoblog/static/js/373.27dca38c.chunk.js",
     "static/media/wawa3.jpg": "/photoblog/static/media/wawa3.b978ce675483d0f8ae4f.jpg",
     "static/media/cat2.jpg": "/photoblog/static/media/cat2.96f71a99b17f8a067975.jpg",
@@ -27,7 +27,7 @@
     "static/media/stjude.jpg": "/photoblog/static/media/stjude.575d28e28bafdc0f9ba5.jpg",
     "static/media/ortigas.jpg": "/photoblog/static/media/ortigas.c59bea7b200e5458cce0.jpg",
     "static/media/tower.jpg": "/photoblog/static/media/tower.7291a5ba1a308f370eac.jpg",
-    "static/media/cat.jpg": "/photoblog/static/media/cat.b0003cf3b0006bcdd67a.jpg",
+    "static/media/cat.jpg": "/photoblog/static/media/cat.18aa20a995616b0312c3.jpg",
     "static/media/farmersbuilding.jpg": "/photoblog/static/media/farmersbuilding.b423d64c63c5f48af68b.jpg",
     "static/media/pilipinas.jpg": "/photoblog/static/media/pilipinas.f281c69ab616d1873c57.jpg",
     "static/media/bgc5.jpg": "/photoblog/static/media/bgc5.95ea70ee61c153e89bb2.jpg",
@@ -42,12 +42,12 @@
     "static/media/araneta.jpg": "/photoblog/static/media/araneta.625df357974943ee1761.jpg",
     "static/media/self.jpg": "/photoblog/static/media/self.80e25e881af1970455b6.jpg",
     "index.html": "/photoblog/index.html",
-    "main.4d0d2723.css.map": "/photoblog/static/css/main.4d0d2723.css.map",
-    "main.f394f6d6.js.map": "/photoblog/static/js/main.f394f6d6.js.map",
+    "main.a67a035e.css.map": "/photoblog/static/css/main.a67a035e.css.map",
+    "main.f49af378.js.map": "/photoblog/static/js/main.f49af378.js.map",
     "373.27dca38c.chunk.js.map": "/photoblog/static/js/373.27dca38c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d0d2723.css",
-    "static/js/main.f394f6d6.js"
+    "static/css/main.a67a035e.css",
+    "static/js/main.f49af378.js"
   ]
 }
