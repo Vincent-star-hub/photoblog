@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
@@ -20,9 +20,9 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <BrowserRouter basename="/photoblog">
+    <HashRouter>
       {" "}
-      {/* Added basename */}
+      {/* Changed BrowserRouter to HashRouter */}
       <ScrollToTop /> {/* Ensures scroll to top on route change */}
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -33,7 +33,7 @@ const App = () => {
           <Route path="booking" element={<BookingPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
