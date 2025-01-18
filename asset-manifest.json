@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/photoblog/static/css/main.4d0d2723.css",
-    "main.js": "/photoblog/static/js/main.fbe01f4f.js",
+    "main.js": "/photoblog/static/js/main.71ad5818.js",
     "static/js/373.27dca38c.chunk.js": "/photoblog/static/js/373.27dca38c.chunk.js",
     "static/media/cathedral-basilica2.jpg": "/photoblog/static/media/cathedral-basilica2.72998ac6f0c06fe02a88.jpg",
     "static/media/bgc3.jpg": "/photoblog/static/media/bgc3.e74bc153a17be04f9cb8.jpg",
@@ -43,11 +43,11 @@
     "static/media/self.jpg": "/photoblog/static/media/self.80e25e881af1970455b6.jpg",
     "index.html": "/photoblog/index.html",
     "main.4d0d2723.css.map": "/photoblog/static/css/main.4d0d2723.css.map",
-    "main.fbe01f4f.js.map": "/photoblog/static/js/main.fbe01f4f.js.map",
+    "main.71ad5818.js.map": "/photoblog/static/js/main.71ad5818.js.map",
     "373.27dca38c.chunk.js.map": "/photoblog/static/js/373.27dca38c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d0d2723.css",
-    "static/js/main.fbe01f4f.js"
+    "static/js/main.71ad5818.js"
   ]
 }
