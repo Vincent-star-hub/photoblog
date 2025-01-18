@@ -36,9 +36,9 @@ const BookingPage = () => {
   };
 
   const packages = [
-    "Simple Shoot (₱999)",
-    "Event Coverage (₱2,499)",
-    "Half-Day Package (₱3,999)",
+    "Simple Shoot (₱10)",
+    "Event Coverage (₱20)",
+    "Half-Day Package (₱30)",
     "Custom Package",
   ];
 
