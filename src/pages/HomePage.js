@@ -7,6 +7,8 @@ import self from "../images/self.jpg";
 import bokeh from "../images/bokeh.jpg";
 import mobiletips from "../images/mobiletips.jpg";
 import logo from "../images/logo.png";
+import man from "../images/man.jpg";
+import woman from "../images/woman.jpg";
 
 const HomePage = () => {
   const services = [
@@ -58,16 +60,19 @@ const HomePage = () => {
       text: "For a smartphone photographer, the quality of photos exceeded my expectations. Very creative angles!",
       name: "Maria Santos",
       role: "Birthday Celebrant",
+      image: woman,
     },
     {
       text: "Amazing how you captured our family moments using just a phone. The photos look so professional!",
       name: "John Cruz",
       role: "Family Portrait Client",
+      image: man,
     },
     {
       text: "Great budget-friendly option for small events. The candid shots were beautiful!",
       name: "Ana Reyes",
       role: "Event Organizer",
+      image: woman,
     },
   ];
 
@@ -206,7 +211,11 @@ const HomePage = () => {
                 <Quote className="text-orange-400 mb-4" size={32} />
                 <p className="text-gray-600 mb-6">{testimonial.text}</p>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                   <div>
                     <div className="font-bold">{testimonial.name}</div>
                     <div className="text-gray-500">{testimonial.role}</div>
