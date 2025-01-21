@@ -71,6 +71,10 @@ const PricingPage = () => {
             <p className="text-lg text-gray-300">
               Quality smartphone photography at affordable prices
             </p>
+            <p className="text-sm text-gray-500 mt-4">
+              *Prices and details shown are for sample purposes only. This is a
+              portfolio website and not an actual booking platform.
+            </p>
           </div>
         </div>
       </div>
