@@ -292,6 +292,18 @@ const PortfolioGallery = () => {
       }
     };
 
+    useEffect(() => {
+      if (viewedImage) {
+        document.body.style.overflow = "hidden"; // Prevent scrolling
+      } else {
+        document.body.style.overflow = ""; // Enable scrolling
+      }
+
+      return () => {
+        document.body.style.overflow = "";
+      };
+    }, [viewedImage]);
+
     window.addEventListener("scroll", handleScroll);
 
     // Clean up event listener on component unmount
