@@ -281,34 +281,17 @@ const PortfolioGallery = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Track scroll position to show/hide button
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 800) {
-        // Change this value to control when to show the button
-        setShowScrollButton(true);
-      } else {
-        setShowScrollButton(false);
-      }
+    if (viewedImage) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    } else {
+      document.body.style.overflow = ""; // Enable scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = "";
     };
-
-    useEffect(() => {
-      if (viewedImage) {
-        document.body.style.overflow = "hidden"; // Prevent scrolling
-      } else {
-        document.body.style.overflow = ""; // Enable scrolling
-      }
-
-      return () => {
-        document.body.style.overflow = "";
-      };
-    }, [viewedImage]);
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up event listener on component unmount
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [viewedImage]);
 
   return (
     <div className="min-h-screen">
